@@ -6,4 +6,5 @@ const randomValue = (min, max, pointNumber) => {
   }
 };
 
-console.log(randomValue(5,20,2));
+randomValue(3,55,2);
+
