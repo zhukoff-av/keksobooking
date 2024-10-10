@@ -1,3 +1,7 @@
+import {TEST_CONST} from './testModule.js';
+
+console.log(TEST_CONST);
+
 function getRandomPositiveInteger(a, b) {
   const lower = Math.ceil(Math.min(Math.abs(a), Math.abs(b)));
   const upper = Math.floor(Math.max(Math.abs(a), Math.abs(b)));
@@ -12,9 +16,7 @@ function getRandomPositiveFloat(a, b, digits = 1) {
   return +result.toFixed(digits);
 }
 
-const getRandomArrayEl = (arr) => {
-  return arr[getRandomPositiveInteger(0, arr.length - 1)];
-};
+const getRandomArrayEl = (arr) => arr[getRandomPositiveInteger(0, arr.length - 1)];
 
 const offerType = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
 const time = ['12:00', '13:00', '14:00'];
@@ -23,7 +25,7 @@ const photos = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/ke
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
 
-let author = {
+const author = {
   avatar: `{img/avatars/user${getRandomPositiveInteger(0, 10)}.png}`
 };
 
